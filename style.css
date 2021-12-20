@@ -1,0 +1,1042 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;
+}
+ body{
+    background-color: hsl(0, 0, 98); 
+}
+
+body{
+    background-color: hsl(0, 0, 98); overflow-x: hidden;
+}
+
+.nav {
+    width:100%; height: auto; top: 0; left: 0; position: fixed; background-color: #181818;box-shadow: 0 1px 2px  rgba(0, 0, 0, 0.15);
+    padding-left: 120px; padding-right: 120px; z-index: 10;
+    display: flex; align-items: center; 
+
+}
+.Logo{
+    position: fixed; color: #81C9F1; font-family: 'Carattere', cursive; font-size: 34px; letter-spacing: 0.08em; text-decoration: none;
+
+}
+.burgersb
+{
+width: 36px;
+height: 28px;
+position: relative;
+background: url("./Recourses/toggle.png");
+background-size: cover;
+cursor: pointer;
+display: none; 
+
+}
+.sidebar
+{
+    position: fixed;
+    top: -280px;
+    right: 34px;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #181818;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    list-style: none;
+    padding: 28px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.10);
+    transition: 300ms all linear;
+    display: none;
+    z-index: 8;
+}
+.burgersb.active
+{
+    background: url("./Recourses/close.png");
+    background-size: cover;
+}
+.sidebar.active
+{
+    top: 70px; 
+}
+.linkscontainer{
+    display: flex; flex-direction: row; justify-content: center; width: 100%; height: auto; 
+
+}
+.links {
+padding: 28px 32px; display: inline-block; text-decoration: none; color: #ffffff; transition: 200ms all linear; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 600;
+}
+.sb {
+    margin: 12px 6px; display: inline-block; text-decoration: none; color: #ffffff; transition: 200ms all linear; font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 600;
+}
+.sb:hover{
+   color: #81C9F1 ;
+}
+.activesb
+{
+    color: #81C9F1
+}
+.links.active {
+    background-color: #81C9F1;
+}
+.links:hover{
+    background-color: #81C9F1;
+}
+.herosection{
+background: url(./Recourses/imagemain.jpg);
+background-size: cover;
+background-position: center 34%;
+background-repeat: no-repeat;
+width: 100%;
+height: 840px;
+border-bottom-left-radius: 40%;
+border-bottom-right-radius: 40%;
+margin-top: 72px;
+}
+.colorgr
+{background:linear-gradient(#036ec0a2,#81caf1a2);
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    display: flex;
+    justify-content: center;
+
+}
+.textcontainer{
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 300px;
+}
+.header{
+    font-family: 'Poppins', sans-serif;
+    line-height: 150%;
+    font-size: 28px;
+    letter-spacing: 0.06;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color: #181818;
+}
+.header.hero
+{
+    font-size: 52px;
+    letter-spacing: 0.12em;
+    color: white;
+}
+.text
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 18px;
+    color: #181818;
+}
+.text.hero
+{
+    color: rgba(255, 255, 255, 0.90);
+    width: 380px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+}
+.button {
+    margin-top: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #81C9F1;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    letter-spacing: 150%;
+    font-weight: 300;
+    padding: 10px 20px;
+    border-radius: 18px;
+    color: white;
+    transition: 200ms all linear;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+.button:hover
+{
+    box-shadow: 0px 0px 18px rgb(255, 255, 255);
+}
+.offers
+{
+    padding-left: 120px; padding-right: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #181818;
+    margin-top: 80px;
+}
+.v2
+{
+font-size: 16px;
+padding: 10px 14px;
+margin-top: 0px;
+margin-bottom: 10px;
+}
+.v2:hover
+{
+    background-color: #026DBF;
+}
+.offers.container
+{
+padding-bottom: 80px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding-left: 100px; padding-right: 100px;
+}
+.imgbox
+{
+width: auto;
+height: auto;
+margin: 20px 20px;
+box-shadow: 0 0 6px rgba(0, 0, 0, 0.32);
+text-decoration: none;
+transition: 200ms all linear;
+border-radius: 6px;
+}
+.imgbox:hover
+{
+    transform: translate(0,-10px);
+    box-shadow: 0 0 12px #036EC0;;
+}
+.img
+{
+    height: 200px;
+    width: 280px;
+    background: url('./Recourses/img6_min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header.box
+{
+    font-size: 24px;
+    padding-left: 20px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+.text.box
+{
+    padding-left: 20px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.price 
+{
+    border-top: 1px solid #181818;
+}
+.text.box.pr
+{
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.i2
+{
+    background: url('./Recourses/img11_min.jpg');
+    background-position: bottom left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.i3
+{
+    background: url('./Recourses/img3_min.jpg');
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.i10
+{
+    background: url('./Recourses/img10_min.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.i4
+{
+    background: url('./Recourses/img4_min.jpg');
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.placesection
+{   margin: 100px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25)
+}
+.imgps
+{
+ width: 50%;
+ height: 480px;
+ background: url('./Recourses/Hollywood.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+}
+.textps
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 120px;
+}
+.ps1
+{
+    background: url('./Recourses/interior.jpg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ps2
+{
+    background: url('./Recourses/seaview.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ps3
+{
+    background: url('./Recourses/sunset.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ps4
+{
+    background: url('./Recourses/sunrise.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about
+{
+    margin: 100px 0px;
+    width: 100%;
+    height: 480px;
+    background: url('./Recourses/Hollywoodmin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    
+}
+.abouttext
+{
+    width: 480px;
+    height: auto;
+    background-color: #181818ce;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+}
+.whitep
+{
+    color: rgba(255, 255, 255, 0.90);
+    width: 380px;
+    margin-bottom: 42px;
+}
+.whiteh
+{
+    font-size: 40px;
+    letter-spacing: 0.12em;
+    color: white;
+}
+footer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 120px;
+    background-color: #111;
+}
+.fcontainer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Flogo
+{
+    color: #ffffff;
+    margin: 12px 0px; 
+    font-family: 'Carattere', cursive; 
+    font-size: 28px; 
+    letter-spacing: 0.08em; 
+    text-decoration: none;
+    position: absolute;
+}
+.linfoot
+{
+    margin: 12px 0px; 
+    display: inline-block; 
+    text-decoration: none; 
+    color: #ffffff; 
+    transition: 200ms all linear; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 15px; 
+    font-weight: 600;
+}
+.linfoot:hover
+{
+ color: #81C9F1;
+}
+.flinks
+{   
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+.pfoot
+{
+    margin: 12px 0px; 
+    display: inline-block; 
+    text-decoration: none; 
+    color: #ffffff; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 15px; 
+    font-weight: 300;
+    line-height: 155%;
+    width: 155px;
+}
+.tel
+{
+    width:30px
+}
+
+.herosection.abussection
+{
+        background: url("./Recourses/imagemain2.jpg");
+        background-size: cover;
+        background-position: center 34%;
+        background-repeat: no-repeat;
+}
+.txabout
+{
+    margin-top: 160px;
+}
+.pabout
+{
+    width: 258px;
+}
+
+.services
+{
+    
+margin-top: 40px;
+display: flex;
+flex-direction: row;
+}
+.srimg
+{
+    width: auto;
+    height: 52px;
+    margin: 14px 10px 6px 10px;
+}
+.servicecontainer
+{
+    
+    background: #181818;
+    height:320px;
+    width: 320px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 20px 34px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.32);
+    margin: 0px 40px;
+}
+.habout
+{
+    font-size: 32px;
+}
+.text.box.exclus
+{
+ padding-left: 0px;
+    
+}
+.v2.btex
+{
+margin-top: 20px;
+width: 140px;
+text-align: center;
+}
+
+.placesection.pl2
+{
+    margin-top: 60px;
+}
+.placesection.pl2.ex
+{
+    margin-top: 180px;
+}
+.ps5
+{
+    background: url('./Recourses/img6.jpg');
+    background-size: cover;
+    background-position: center 55%;
+}
+.ps6
+{
+    background: url('./Recourses/img4.jpg');
+    background-size: cover;
+    background-position: center 20%;
+}
+.ps7
+{
+    background: url('./Recourses/img11.jpg');
+    background-size: cover;
+    background-position: center 4%;
+}
+.ps8
+{
+    background: url('./Recourses/img3.jpg');
+    background-size: cover;
+    background-position: center 85%;
+}
+.ps9
+{
+    background: url('./Recourses/img10.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.ps10
+{
+    background: url('./Recourses/img2.jpg');
+    background-size: cover;
+    background-position: center 0%;
+}
+.ps11
+{
+    background: url('./Recourses/img8.jpg');
+    background-size: cover;
+    background-position: center 45%;
+}
+.ps12
+{
+    background: url('./Recourses/img9.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.ps13
+{
+    background: url('./Recourses/img12.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.ps14
+{
+    background: url('./Recourses/img13.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.form 
+{
+    padding: 200px 120px 120px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("./Recourses/contactus.jpg");
+    background-size: cover;
+    background-position: center 45%;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.inputst
+{
+    display: inline-block;
+    width: 320px;
+    height: 40px;
+    padding: 8px 16px;
+   border-radius: 6px;
+    margin-bottom: 18px;
+    border: 1px solid #a8a8a8;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 16px;
+    color: #181818;
+    
+}
+.txarea
+{
+    resize: none;
+    height: 168px;
+}
+.inputst:focus
+{
+    outline: none;
+    border: 1px solid #81C9F1;
+    background-color: #eff7fc;
+    
+  
+}
+.inputst::placeholder
+{
+    color: #18181852;
+}
+.subbutton
+{
+    margin-top: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #81C9F1;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    letter-spacing: 150%;
+    font-weight: 300;
+    padding: 10px 20px;
+    border-radius: 18px;
+    color: white;
+    transition: 200ms all linear;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    border: none;
+    width: 180px;
+} 
+.subbutton:hover
+{
+    background-color: #026DBF;
+    box-shadow: 0px 0px 18px rgb(255, 255, 255);
+}
+
+@media (min-width: 1928px)
+{
+    body 
+    {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    }
+    .wrapper
+    {
+    width: 1920px;
+    } 
+    .nav
+    {
+    position: sticky;
+    }
+    .herosection
+    {margin-top: 0px;}
+    .placesection.pl2.ex
+{
+    margin-top: 60px;
+}
+.form {
+    width: 100%;
+    height: 100vh;
+}
+.ctfoot
+{
+    position: sticky;
+    left: 0;
+    bottom: 0;
+}
+}
+@media(max-width: 1680px)
+{
+    .herosection{
+
+        background-position: center 20%;
+        }
+}
+@media(max-width: 1468px)
+{
+    .herosection{
+
+        background-position: center 0%;
+        }
+}
+
+@media(max-width:1390px)
+{
+    .herosection{
+
+        background-position: center 25%;
+        }
+    .nav
+    {
+        justify-content: space-between; height: 72px; 
+    }
+    .Logo
+    {
+        position: initial;
+    }
+    .linkscontainer
+    {
+        display: none;
+    }
+    .burgersb
+    {
+        display: flex;
+    }
+    .sidebar
+    {
+        display: flex;
+    }
+    .herosection{
+    height: 560px;
+    }
+    .textcontainer{
+
+    margin-top: 120px;
+    }
+    .herosection.abussection
+    {
+        height: 620px;
+    }
+    .txabout
+    {
+    margin-top: 80px;
+    }
+    .servicecontainer
+    {
+    height:300px;
+    width: 300px;
+    margin: 0px 20px;
+    }
+   
+
+    .Flogo
+    {
+    display:inline-block;
+    position: relative;
+    margin-right: 68px;
+    }
+    .fcontainer
+{
+    justify-content: flex-end
+}
+}
+
+@media(max-width: 1148px)
+{
+    .herosection{
+
+        background-position: center 15%;
+        }
+    .servicecontainer
+    {
+    height:auto;
+    width: 60vw;
+    margin: 0px 20px 28px 20px;
+    }
+    .pabout
+    {
+        width: auto;
+    }
+    .services
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+        .herosection.abussection
+        {
+        height: 1140px;
+        border-bottom-left-radius: 6%;
+        border-bottom-right-radius: 6%;
+        }
+        .abclor
+        {
+            height: 100%;
+            border-bottom-left-radius: 6%;
+            border-bottom-right-radius: 6%;   
+        }
+}
+        @media(max-width: 1080px)
+        {
+            .herosection{
+
+                background-position: center 10%;
+                }
+        .textps
+        {
+
+        background:#1818188a;position: absolute; height: 480px; right: 0; display: flex;
+        justify-content: center; text-align: center;
+        align-items: center; width: 100%; z-index: 0; 
+        }
+        .about
+        {
+            text-align: center;
+        }
+        .imgps
+        {
+        width: 100%;
+
+        }
+        .txt2
+        {
+        position: absolute; 
+        transform: translate(0,480px);  
+        }
+        .txt3
+        {
+        position: absolute; 
+        transform: translate(0,480px); 
+        }
+        .txt4
+        {
+        position: absolute; 
+        transform: translate(0,960px);
+        } 
+        .header{
+        color: #ffffff;
+        }
+        .text
+        {
+        color: #ffffff;
+        }  
+        .box
+        {
+        color: #181818
+        } 
+        .offers h1.header
+        {
+        color: #181818;
+        }
+        .exclus
+        {
+        color: #ffffff;
+        }
+        .pl2 .price
+        {
+        border-top: 1px solid #ffffff;
+        }
+        }
+        @media(max-width: 1040px)
+        {
+            .herosection{
+
+                background-position: center 0%;
+                }
+        .fcontainer
+        {
+        justify-content: flex-start
+        } 
+        .nav
+        {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .offers
+{
+    padding-left: 40px; padding-right: 40px;
+}
+.textps
+{
+    padding: 0px 40px;
+}
+footer
+{
+
+    padding: 40px 40px;
+ 
+}
+.form 
+{
+    padding: 120px 40px 60px 40px;
+
+}
+        }
+        @media(max-width: 848px)
+        {
+            .herosection{
+
+                background-position: center 0%;
+                }
+            .placesection.pl2.ex
+{
+    margin-top: 128px;
+}
+            .offers.container
+{
+padding-bottom: 20px;
+padding-left: 40px; padding-right: 40px;
+justify-content: center;
+}
+.herosection.abussection
+        {
+        height: 1080px;
+        }
+
+
+            .offers.container
+{
+padding-bottom: 20px;
+padding-left: 40px; padding-right: 40px;
+justify-content: center;
+}
+.herosection{
+    height: 440px;
+
+    }
+.herosection.abussection
+        {
+        height: 1120px;
+        }
+        .header{
+           font-size: 20px;
+            }
+            .text
+            {
+            font-size: 16px;
+            }  
+            .header.hero
+{
+    font-size: 32px;
+  
+}
+.placesection
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+        }
+
+        
+        @media(max-width: 560px)
+         {  
+             .servicecontainer
+            {
+            height:auto;
+            width: 80vw;
+            padding: 16px 0px;
+            margin: 0px 20px 28px 20px;
+            }
+            .herosection{
+                height: 360px;
+                }
+            .herosection.abussection
+            {
+            height: 1048px;
+            }
+            .txabout
+            {
+            margin-top: 40px;
+            }
+            .header.hero
+            {
+                font-size: 24px;
+              
+            }
+            .text.hero
+{
+
+    max-width: 280px;
+
+}
+
+            .form {
+                padding: 100px 6px 40px 6px;
+            }
+            .Flogo
+            {
+                position: initial;
+                display: flex;
+                
+            }
+            .inputst
+            {
+                display: inline-block;
+                width: 80vw;
+                padding: 8px 8px;
+       
+            }
+            .about
+            {
+  
+                min-height: 320px;
+       
+                
+            }
+            .abouttext
+            {
+                width: 100%;
+               
+
+            }
+            .whitep
+            {
+                width: auto;
+                padding: 0px 40px;
+            }
+          
+            footer
+            {
+                flex-direction: row;
+                flex-wrap: wrap;
+               
+                padding: 40px 40px 68px 40px;
+                width: auto;
+                 justify-content: center;
+                 width: auto;
+            } 
+
+  .fcontainer
+{
+    width: 155px;
+}  
+        }
+
+        @media(max-width: 456px)
+        {
+            .herosection.abussection
+            {
+            height: 1128px;
+            }
+        }
+        @media(max-width: 376px)
+        {
+            .herosection.abussection
+            {
+            height: 1190px;
+            }
+        }
+
+        @media(max-width: 336px)
+        {
+            .herosection.abussection
+            {
+            height: 1240px;
+            }
+            .offers
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}}
+
